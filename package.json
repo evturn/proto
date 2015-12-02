@@ -1,0 +1,26 @@
+{
+  "name": "proto",
+  "version": "0.0.1",
+  "description": "Prototypes as classes",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:evturn/proto.git"
+  },
+  "keywords": [
+    "prototype",
+    "class",
+    "super",
+    "constructor",
+    "__proto__",
+    "descriptor",
+    "instanceof",
+    "isPrototypeOf"
+  ],
+  "author": "Evan Turner",
+  "license": "ISC",
+    "bugs": {
+    "url": "https://github.com/evturn/proto/issues"
+  },
+  "homepage": "https://github.com/evturn/proto"
+}
