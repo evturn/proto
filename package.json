@@ -1,5 +1,5 @@
 {
-  "name": "@ev/proto",
+  "name": "@evturn/proto",
   "version": "0.0.1",
   "description": "Prototypes as classes",
   "main": "index.js",
