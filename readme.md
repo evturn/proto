@@ -32,7 +32,7 @@ const newDude = Proto.extend({
 
 ### `Proto.extend()`
 #### Creating new objects
-* `this` is a prototype object used as a class (in this case `newDude`)
+* `this` is a prototype object used as a class
 
 ```javascript
 const newDude = Proto.extend({
@@ -52,7 +52,7 @@ newerDude.sup();
 
 ### `Proto.new()`
 #### Creating new instances
-* `this` is the prototype of the new instance (in this case `newerDude`)
+* `this` is the prototype of the new instance
 
 ```javascript
 const newDude = Proto.extend({
