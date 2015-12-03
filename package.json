@@ -1,6 +1,6 @@
 {
   "name": "@evturn/proto",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "description": "Prototypes as classes",
   "main": "index.js",
   "repository": {

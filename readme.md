@@ -35,11 +35,18 @@ const newDude = Proto.extend({
 * `this` is a prototype object used as a class (in this case `newDude`)
 
 ```javascript
-const newerDude = newDude.new({
+const newDude = Proto.extend({
+  name: 'Br0metheus Dudequest',
+  sup: function() {
+    return `I am ${this.name}.`;
+  }
+});
+
+const newerDude = newDude.extend({
   name: 'Quentin Vesclovious'
 });
 
-newerDude.sup()
+newerDude.sup();
 // I am Quentin Vesclovious.
 ```
 
@@ -48,11 +55,18 @@ newerDude.sup()
 * `this` is the prototype of the new instance (in this case `newerDude`)
 
 ```javascript
+const newDude = Proto.extend({
+  name: 'Br0metheus Dudequest',
+  sup: function() {
+    return `I am ${this.name}.`;
+  }
+});
+
 const newerDude = newDude.new({
   name: 'Quentin Vesclovious'
 });
 
-newerDude.sup()
+newerDude.sup();
 // I am Br0metheus Dudequest.
 
 /**
@@ -81,11 +95,11 @@ const kane = Proto.extend({
   }
 });
 
-kane.extend(kane, undertaker);
+kane.mixin(kane, undertaker);
 kane.tombstone();
 
 // Envision me pile driving you head first into the canvas
 ```
 
-#### Thanks, br0
+#### Thanks, br0.
 ##### Now go out there and be somebody.
