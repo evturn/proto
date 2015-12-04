@@ -1,8 +1,12 @@
 {
   "name": "@evturn/proto",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Prototypes as classes",
   "main": "index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/evturn/proto.git"
@@ -22,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/evturn/proto/issues"
   },
-  "homepage": "https://github.com/evturn/proto"
+  "homepage": "https://github.com/evturn/proto",
+  "devDependencies": {
+    "babel-cli": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13"
+  }
 }
