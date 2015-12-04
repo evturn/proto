@@ -91,7 +91,7 @@ const undertaker = Proto.extend({
 
 const kane = Proto.extend({
   chokeslam: function() {
-    return `Ok, so I pick you up by the neck and throw you through the Spanish announcer's table`;
+    return `Just gonna quickly throw you through the Spanish announcer's table`;
   }
 });
 
