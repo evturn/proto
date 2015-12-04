@@ -44,7 +44,7 @@ exports = module.exports = {
    */
 
   mixin: function(target, source) {
-    getOwnPropNames(src).forEach((name) => {
+    getOwnPropNames(source).forEach((name) => {
       if (hasOwnProp.call(target, name)) { return; }
       const descriptor = getOwnPropDescriptor(source, name);
 
